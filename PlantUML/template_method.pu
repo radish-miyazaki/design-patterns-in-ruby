@@ -1,0 +1,32 @@
+@startuml
+skinparam groupInheritance 2
+
+class AbstractClass {
+    template_method()
+
+    operation1()
+    operation2()
+    operation3()
+}
+
+class ConcreteClass1 extends AbstractClass {
+    operation1()
+    operation2()
+    operation3()
+}
+
+class ConcreteClass2 extends AbstractClass {
+    operation1()
+    operation2()
+    operation3()
+}
+
+note right of AbstractClass::template_method
+def template_method
+  operation1()
+  operation2()
+  operation3()
+end
+end note
+
+@enduml
