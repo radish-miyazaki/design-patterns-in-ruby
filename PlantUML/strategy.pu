@@ -1,0 +1,21 @@
+@startuml
+
+class Context {
+  @strategy
+}
+
+class Strategy {
+  operation()
+}
+
+Context --> Strategy
+
+class Strategy1 extends Strategy {
+  operation()
+}
+
+class Strategy2 extends Strategy {
+  operation()
+}
+
+@enduml
