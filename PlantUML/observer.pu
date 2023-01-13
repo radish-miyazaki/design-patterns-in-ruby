@@ -1,0 +1,20 @@
+@startuml
+
+class Subject {
+  @observers[]
+  add_observer(o)
+  remove_observer(o)
+  notify_observers()
+}
+
+class Observer {
+  update(subject)
+}
+
+Subject::observers -> Observer
+
+class ConcreteObserver extends Observer {
+  update(subject)
+}
+
+@enduml
