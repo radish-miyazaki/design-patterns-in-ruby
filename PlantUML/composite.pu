@@ -1,0 +1,18 @@
+@startuml
+
+class Component {
+  operation()
+}
+
+class Leaf extends Component {
+  operation()
+}
+
+class Composite extends Component {
+  @subcomponents[]
+  operation()
+}
+
+Composite::subcomponents --> Component
+
+@enduml
