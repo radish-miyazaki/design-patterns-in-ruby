@@ -1,0 +1,15 @@
+@startuml
+
+class Command {
+  execute()
+}
+
+class ConcreteCommand1 extends Command {
+  execute()
+}
+
+class ConcreteCommand2 extends Command {
+  execute()
+}
+
+@enduml
