@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     madeleine (0.9.0)
+    sync (0.5.0)
 
 PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
   madeleine
+  sync
 
 BUNDLED WITH
    2.3.3

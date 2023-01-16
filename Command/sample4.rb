@@ -1,3 +1,6 @@
+# bundle exec ruby sample4.rb
+require 'rubygems'
+require 'bundler/setup'
 require 'madeleine'
 
 class Employee
