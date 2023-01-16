@@ -1,3 +1,5 @@
+require 'fileutils'
+
 class Command
   attr_reader :description
 
