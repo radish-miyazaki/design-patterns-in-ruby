@@ -1,0 +1,14 @@
+@startuml
+
+class Client {}
+
+class Target {}
+
+class Adapter extends Target {}
+
+class Adaptee {}
+
+Client -right-> Target
+Adapter -right-> Adaptee
+
+@enduml
