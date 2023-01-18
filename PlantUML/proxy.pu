@@ -1,0 +1,24 @@
+@startuml
+
+class Service {
+  do_something()
+}
+
+class RealService extends Service {
+  do_something()
+}
+
+class ServiceProxy extends Service {
+  @subject
+  do_something()
+}
+
+ServiceProxy::subject -left-> RealService
+
+note right of ServiceProxy::do_something
+def do_something
+  @subject.do_something
+end
+end note
+
+@enduml
