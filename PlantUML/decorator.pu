@@ -1,0 +1,19 @@
+@startuml
+
+class Component {
+  operation()
+}
+
+class ConcreteComponent extends Component {
+  operation()
+}
+
+class Decoration extends Component {
+  @component
+  operation()
+  new_operation()
+}
+
+Decoration::component --> Component
+
+@enduml
