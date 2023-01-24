@@ -1,0 +1,28 @@
+@startuml
+
+class AbstractFactory {
+  create_product1()
+  create_product2()
+}
+
+class ConcreateFactoryA extends AbstractFactory {
+  create_product1()
+  create_product2()
+}
+
+class ConcreateFactoryB extends AbstractFactory {
+  create_product1()
+  create_product2()
+}
+
+class ProductA1
+class ProductA2
+class ProductB1
+class ProductB2
+
+ConcreateFactoryA::create_product1 --> ProductA1
+ConcreateFactoryA::create_product2 --> ProductA2
+ConcreateFactoryB::create_product1 --> ProductB1
+ConcreateFactoryB::create_product2 --> ProductB2
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+class Product
+class Product1 extends Product
+class Product2 extends Product
+
+class Creator {
+  factory_method()
+}
+
+class ConcreateCreator1 extends Creator {
+  factory_method()
+}
+
+class ConcreateCreator2 extends Creator {
+  factory_method()
+}
+
+ConcreateCreator1::factory_method -down-> Product1
+ConcreateCreator2::factory_method -down-> Product2
+
+@enduml
