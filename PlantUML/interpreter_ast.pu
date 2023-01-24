@@ -1,0 +1,13 @@
+@startuml
+
+rectangle "*" as t1
+rectangle "5.0" as t2
+rectangle "+" as t3
+rectangle "3" as t4
+rectangle "x" as t5
+t3 --> t4
+t3 --> t5
+t1 --> t2
+t1 --> t3
+
+@enduml

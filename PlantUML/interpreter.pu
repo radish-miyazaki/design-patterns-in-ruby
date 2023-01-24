@@ -1,0 +1,23 @@
+@startuml
+
+class Client
+class Context
+
+class Expression {
+  interpret(context)
+}
+
+class TerminalExpression extends Expression {
+  interpret(context)
+}
+
+class NonTerminalExpression extends Expression {
+  @sub_expressions[]
+  interpret(context)
+}
+
+Client -right-> Expression
+Client -down-> Context
+NonTerminalExpression::sub_expressions --> Expression
+
+@enduml

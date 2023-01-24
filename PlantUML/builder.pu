@@ -1,0 +1,18 @@
+@startuml
+
+class Director
+
+class Builder {
+  add_part1()
+  add_part2()
+  add_part3()
+  result()
+}
+
+class Product
+
+Director -right-> Builder
+
+Builder -right-> Product
+
+@enduml
